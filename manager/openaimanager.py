@@ -34,3 +34,12 @@ class OpenAIManager():
     
     def reset_history(self):
         self.chat_history = []
+
+    def add_memory(self, memory):
+        self.chat_history.append(memory)
+    
+    def remove_memory(self, memory):
+        if memory in self.chat_history:
+            self.chat_history.remove(memory)
+        else:
+            print("Failed to remove memory. Invalid memory data.\nTIP: Try running 'show_history' to see all memory data.")
