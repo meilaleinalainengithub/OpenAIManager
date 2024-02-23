@@ -38,8 +38,13 @@ class OpenAIManager():
     def add_memory(self, memory):
         self.chat_history.append(memory)
     
-    def remove_memory(self, memory):
+    def remove_memory(self, memory, type):
+        '''Types:\n
+        user: the person interacting with the AI\n
+        assistant: the AI itself\n
+        system: the AI's context for the conversation and how to act'''
         if memory in self.chat_history:
+            memory = ({"role": type, "content": memory})
             self.chat_history.remove(memory)
         else:
             print("Failed to remove memory. Invalid memory data.\nTIP: Try running 'show_history' to see all memory data.")
