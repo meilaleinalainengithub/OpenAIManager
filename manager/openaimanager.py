@@ -36,6 +36,10 @@ class OpenAIManager():
         self.chat_history = []
 
     def add_memory(self, memory, role):
+        '''Types:\n
+        user: the person interacting with the AI\n
+        assistant: the AI itself\n
+        system: the AI's context for the conversation and how to act'''
         memory = ({"role": role, "content": memory})
         self.chat_history.append(memory)
     
