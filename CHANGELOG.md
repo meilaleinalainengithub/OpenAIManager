@@ -10,3 +10,6 @@ ChangeLog
 0.1.1 (2/23/2024)
     - Added Function Context
     - Added Simpler Memory Add/Removing
+0.2.0 (2/25/2024)
+    - Published to PyPi (pip install mllopenaimanager)
+    - Updated README.md
