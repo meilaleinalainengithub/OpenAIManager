@@ -13,3 +13,7 @@ ChangeLog
 0.2.0 (2/25/2024)
     - Published to PyPi (pip install mllopenaimanager)
     - Updated README.md
+1.0.0 (2/28/2024)
+    - Split into classes
+    - Added ImageManager with Image Generating
+    - Added SpeechManager with TTS and STT
