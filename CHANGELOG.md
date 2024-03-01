@@ -17,3 +17,8 @@ ChangeLog
     - Split into classes
     - Added ImageManager with Image Generating
     - Added SpeechManager with TTS and STT
+1.1.0 (3/1/2024)
+    - Added Chat Without History
+    - Added Get Chat Tokens
+    - Added Get String Tokens
+    - Added token counter on every chat

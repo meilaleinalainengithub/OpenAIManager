@@ -3,6 +3,7 @@
 - Automatically store current chat history.
 - Simple Chatting.
 - Manually handle chat history.
+- Automatically calculate tokens used.
 
 ### __init__(openai_key)
 - Resets chat history
@@ -17,6 +18,10 @@
 - Gets the response using the model and chat history
 - Returns the response
 
+### say_without_history(message)
+- Gets the response using the model WITHOUT chat history
+- Returns the response
+
 ### show_history()
 - Returns chat history
 
@@ -29,6 +34,14 @@
 ### remove_memory(memory, role)
 - Checks if the string memory is in the chat history list
 - Removes it from the chat history
+
+### get_all_tokens()
+- Gets current chats tokens used
+- Returns tokens used
+
+### get_string_tokens(message)
+- Get string (message) tokens
+- Returns tokens used
 
 ## ImageManager
 - Generate Images with prefered model
