@@ -1,3 +1,5 @@
+NOT UPDATING (not like anyone uses this lmao)
+
 # OpenAiManager
 ## ChatManager
 - Automatically store current chat history.
